@@ -1,0 +1,26 @@
+<serachInput></serachInput>
+<!-- 轮播图 -->
+<swiper autoplay indicator-dots interval="3000">
+  <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+    <navigator>
+      <image src="{{item.image_src}}" mode="widthFix"></image>
+    </navigator>
+  </swiper-item>
+</swiper>
+<!-- 菜单 -->
+<view class="index_menu">
+  <navigator wx:for="{{menuList}}" wx:key="name" url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+    <image src="{{item.image_src}}" mode="widthFix"></image>
+  </navigator>
+</view>
+<!-- 菜单2 -->
+<view class="index_floor">
+  <view class="floor-item" wx:for="{{floorList}}" wx:key="name">
+    <image mode="widthFix" src="{{item.floor_title.image_src}}" class="floor-title"></image>
+    <view class="floor-child">
+    <navigator wx:for="{{item.product_list}}" wx:for-item="item1" wx:for-index="index1" wx:key="name">
+      <image src="{{item1.image_src}}" mode="{{index1 == 0? 'widthFix':'scaleToFill'}}"></image>
+    </navigator>
+    </view>
+  </view>
+</view>

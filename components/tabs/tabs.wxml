@@ -1,0 +1,8 @@
+<view class="tabs-container">
+  <view class="tabs-title">
+    <view wx:for="{{tabs}}" wx:key="id" class="{{index==idx?'active':''}}" bindtap="changeMenu" data-index="{{index}}">{{item.value}}</view>
+  </view>
+  <view class="tabs-content">
+    <slot></slot>
+  </view>
+</view>

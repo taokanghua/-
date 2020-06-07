@@ -1,0 +1,14 @@
+/* components/searchInput/searchInput.wxss */
+.ipt-container{
+  height: 90rpx;
+  padding: 10rpx;
+  background-color: var(--themeColor);
+}
+.ipt-container navigator{
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+}

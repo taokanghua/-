@@ -1,0 +1,45 @@
+swiper{
+  height: calc(340 * 750rpx / 750);
+}
+swiper image{
+  width: 100%;
+}
+
+.index_menu{
+  display: flex;
+}
+.index_menu navigator{
+  flex: 1;
+  padding: 20rpx;
+}
+.index_menu image{
+  width: 100%;
+  /* height: 150rpx; */
+}
+
+.index_floor{
+  padding: 0 10rpx;
+}
+.floor-title{
+  width: 750rpx;
+}
+.floor-item{
+  /* margin: 40rpx; */
+  overflow: hidden;
+  margin-bottom: 26rpx;
+}
+.floor-child{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 193rpx 193rpx;
+  grid-gap: 10rpx;
+}
+.floor-child navigator:first-child{
+  grid-row: span 2;
+}
+
+.floor-child image{
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,103 @@
+/* pages/good_detail/index.wxss */
+swiper{
+  height: 65vw;
+  text-align: center;
+}
+swiper image{
+  height: 60%;
+}
+
+.goods-price{
+  font-size: 32rpx;
+  color: var(--themeColor);
+  font-weight: bold;
+  margin: 12rpx 0;
+}
+.goods-info{
+  display: flex;
+}
+.goods-left{
+  flex: 5;
+  font-size: 26rpx;
+  padding: 0 8rpx;
+
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+}
+.goods-right{
+  flex: 1;
+  border-left: 4rpx solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.goods-content{
+  background-color: #EDEEEC;
+  padding-bottom: 90rpx;
+  overflow: hidden;
+}
+.goods-title{
+  padding: 16rpx 12rpx;
+  font-weight: bold;
+  font-size: 34rpx;
+  color: var(--themeColor);
+  margin: 10rpx 0;
+  background-color: #fff;
+}
+
+.tool-tip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  border-top: 2rpx solid #ccc;
+}
+.tool-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.tool-item button{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100% !important;
+  height: 100%;
+  opacity: 0;
+}
+.tool-item view{
+  font-size: 20rpx;
+}
+.btn{
+  flex:2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn view{
+  
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #fff;
+
+}
+.btn.car{
+  height: 100%;
+  background-color: orange;
+}
+.btn.buy{
+  height: 100%;
+  background-color: var(--themeColor);
+}
